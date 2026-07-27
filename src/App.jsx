@@ -1,4 +1,3 @@
-import React from "react";
 import { FaSearch } from "react-icons/fa";
 
 export default function App() {
@@ -37,7 +36,7 @@ export default function App() {
 
           <ul className="flex items-center gap-8 uppercase text-sm font-semibold">
             <li className="relative group cursor-pointer">
-           < div className="flex items-center gap-1">
+           <div className="flex items-center gap-1">
               Home
               <span className="text-[10px]">▼</span>
             </div>
@@ -221,14 +220,14 @@ export default function App() {
               
               </h3>
 
-              <input
-                type="text"
-                placeholder="Search..."
-                className="w-full border rounded p-2 outline-none focus:border-orange-500 "
-                
-              
-              />
-              <FaSearch className="absolute s right-70  -translate-y-1/2 text-gray-500 cursor-pointer" />
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="w-full border rounded p-2 pr-10 outline-none focus:border-orange-500"
+                />
+                <FaSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 cursor-pointer" />
+              </div>
               
               
               
